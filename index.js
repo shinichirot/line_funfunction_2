@@ -8,6 +8,7 @@ $(function () {
         sendText(`情報登録ありがとうございました`);
         
         var name = $('textarea[name="name"]').val();
+        var station = $('textarea[name="station"]').val();
         var adress = $('textarea[name="adress"]').val();
         var tel = $('textarea[name="tel"]').val();
         var age = $('select[name="age"]').val();
@@ -21,7 +22,7 @@ $(function () {
         var date3 = $('input[name="date3"]').val();
         var time3 = $('select[name="time3"]').val();
        
-        var msg = `◆回答ありがとうございます\nお名前：${name}\n年代：${age}\n面談希望日：${date1}-${time1} ,${date2}-${time2},${date3}-${time3}`;
+        var msg = `◆回答ありがとうございます\nお名前：${name}\n年代：${age}\n最寄駅：${station}`;
         sendText(msg);
 
         return false;
